@@ -10,24 +10,26 @@ export default async function Index() {
   return (
     <div className="flex-1 w-full flex flex-col items-center">
       <NavbarLg />
-      <NavbarSm />
-      <div className="mt-10 w-full animate-in flex-1 flex flex-col gap-20 opacity-0 max-w-4xl px-3">
-        <Header />
-      </div>
+      {/* <NavbarSm /> */}
+      <div className="">
+        <div className="mt-10 w-full animate-in flex-1 flex flex-col gap-20 opacity-0 max-w-4xl px-3">
+          <Header />
+        </div>
 
-      <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
-        <p>
-          Made by{" "}
-          <a
-            href="https://github.com/Coding-With-Josh"
-            target="_blank"
-            className="font-bold hover:underline"
-            rel="noreferrer"
-          >
-            Idele Joshua
-          </a>
-        </p>
-      </footer>
+        <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
+          <p>
+            Made by{" "}
+            <a
+              href="https://github.com/Coding-With-Josh"
+              target="_blank"
+              className="font-bold hover:underline"
+              rel="noreferrer"
+            >
+              Idele Joshua
+            </a>
+          </p>
+        </footer>
+      </div>
     </div >
   );
 }
