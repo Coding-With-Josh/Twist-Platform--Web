@@ -1,20 +1,19 @@
 import NextLogo from "./NextLogo";
 import SupabaseLogo from "./SupabaseLogo";
+import ArrowRight from "./icons/arrowRight";
+import Launch from "./icons/launch";
 
 export default function Header() {
   return (
-    <div className="flex flex-col gap-16 items-center">
+    <div className="flex flex-col gap-16 items-center my-10">
       <div className="flex gap-8 justify-center items-center">
-        <a
-          href="/"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
+        <span className="py-4 px-5 gap-3 rounded-lg flex justify-between items-center flex-1 h-6 bg-foreground/10">
+          <div className="flex items-center justify-center gap-1.5">
+            <Launch />
+            <h2 className="mt-0.5 font-bold text-sm">Introducing TwistAI</h2>
+          </div>
+          <ArrowRight />
+        </span>
       </div>
       <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
       <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
