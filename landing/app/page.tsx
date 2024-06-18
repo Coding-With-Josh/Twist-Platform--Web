@@ -1,16 +1,18 @@
+
+
 import { navLinks } from "@/data";
 import AuthButton from "../components/AuthButton";
 import { createClient } from "@/utils/supabase/server";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import NavbarLg from "@/components/NavBar_lg";
-import NavbarSm from "@/components/Navbar_sm"
+import NavbarSm from "@/components/Navbar_sm";
+import NavbarFunctionality from '@/components/NavFunctionality';
 
 export default async function Index() {
   return (
     <div className="flex-1 w-full flex flex-col items-center">
-      <NavbarLg />
-      {/* <NavbarSm /> */}
+      <NavbarFunctionality />
       <div className="">
         <div className="mt-10 w-full animate-in flex-1 flex flex-col gap-20 opacity-0 max-w-4xl px-3">
           <Header />
